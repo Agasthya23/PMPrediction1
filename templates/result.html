@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PM10 Prediction</title>	
+    
+</head>
+<body>
+
+	
+	 <table border="1">
+         <tr>
+         <th>Predicted PM10 Values</th>
+		 </tr>
+         {# here we iterate over every item in our list#}
+         {% for item in prediction %}
+             <col><td>{{ item }}</td></col>
+         {% endfor %}
+         <br>
+	</table>
+	<table border="1">
+		<tr>
+			<th>Actual PM10 Values</th>
+			{% for i in a %}
+				<col><td>{{ i }}</td></col>
+			{% endfor %}
+		
+
+
+
+	</table>
+     
+	
+	
+
+</body>
+</html>
